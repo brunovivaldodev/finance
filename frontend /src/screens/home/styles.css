@@ -1,0 +1,74 @@
+.section-header{
+    height: 238px;
+    background-color: #2D4A22;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 32px;
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    max-width: 1120px;
+    margin: 80px auto 0;
+    padding: 0 8px;
+    margin-top: 70px;
+}
+
+nav a {
+    margin: 8px;
+    text-decoration: none;
+  }
+
+  section nav svg {
+    margin-left: 95% ;
+    margin-top: -10px;
+}
+
+.form {
+  width: 600px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-data {
+  height: 30px;
+  background: inherit;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  border-left: none ;
+  border-right: none ;
+  border-top: none ;
+}
+
+
+.form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.form-submit-cancel {
+  width: 150px;
+  height: 50px;
+  border-radius: 24px;
+  margin-right: 16px;
+  background: #E92929;
+  border: none;
+  color: #F0F2F5;
+}
+
+.form-submit-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 24px;
+  background: #5ADCA2;
+  border: none;
+  color: #F0F2F5;
+
+}

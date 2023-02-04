@@ -1,0 +1,32 @@
+.table-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 16px auto 0;
+    padding: 0 8px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin-top: 16px;
+}
+
+
+.table td {
+    padding: 20px 16px;
+    background: #fff;
+}
+
+.table tr td{
+    text-align: center;
+}
+
+.income-value {
+    color: #49AA26;
+}
+
+.outcome-value {
+    color: #E92929;
+
+}

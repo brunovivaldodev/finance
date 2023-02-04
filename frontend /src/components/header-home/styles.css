@@ -1,0 +1,56 @@
+header{
+  width: 100%;
+  max-width: 1120px;
+}
+
+.title {
+ margin-left: 50%;
+  float: left;
+}
+
+.aside {
+  display: flex;
+  height: 61px;
+  padding-top: 30px;
+  padding-left: 500px;
+
+  cursor: pointer;
+}
+
+
+.aside .photo{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: aqua;
+  margin-right: 8px;
+
+}
+
+.aside .user-name {
+  margin-right: 8px;
+}
+
+.select {
+  width: 20px;
+  background: #2D4A22;
+  border: none;
+
+}
+
+.form-submit-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.span {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}
+
+.span li {
+  list-style: none;
+}
