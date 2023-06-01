@@ -10,7 +10,7 @@ import {
 import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { NavigationProp, useNavigation } from "@react-navigation/native";
-import { Image, TextInput, TouchableOpacity } from "react-native";
+import { Image, TouchableOpacity } from "react-native";
 import { StackNavigatorParams } from "../../routes";
 import { useForm, Controller } from "react-hook-form";
 import { api } from "../../config/api";
@@ -60,8 +60,8 @@ export function SingIn() {
   }
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <VStack alignItems={"flex-start"} width={"96%"}>
-      
+      <VStack alignItems={"flex-start"} width={"96%"} backgroundColor="#fafafa">
+
         <VStack
           borderStyle={"solid"}
           width={"96%"}
@@ -70,77 +70,77 @@ export function SingIn() {
           borderRadius="30"
           marginBottom={70}
           height={250}
-          >
+        >
           <VStack width={"96%"} height={200} marginTop="5">
-          <Center style={{height:"40%"}} marginBottom="1">
-          <Image
-              source={require("../../../assets/cashbox.png")}
-              style={{ width: "100%", height: "100%"}}
-              resizeMode="contain"      
-          ></Image>
+            <Center style={{ height: "40%" }} marginBottom="1">
+              <Image
+                source={require("../../../assets/cashbox.png")}
+                style={{ width: "100%", height: "100%" }}
+                resizeMode="contain"
+              ></Image>
 
-            <Text fontSize={"18px"} bold color={"#5ADCA2"} marginTop="5" marginBottom={2} >
-              Login
-            </Text>
-            <VStack
-              borderStyle={"solid"}
-              borderWidth="1"
-              borderColor={"#5ADCA2"}
-              width={"60%"}
-            ></VStack>
-          </Center>
+              <Text fontSize={"18px"} bold color={"#5ADCA2"} marginTop="5" marginBottom={2} >
+                Login
+              </Text>
+              <VStack
+                borderStyle={"solid"}
+                borderWidth="1"
+                borderColor={"#5ADCA2"}
+                width={"60%"}
+              ></VStack>
+            </Center>
           </VStack>
 
-          <VStack  width={"96%"} height={200} marginTop="-15" marginBottom={20}>
-          <Center marginBottom="10">
-            <FormControl>
-              <Stack space={5}>
-                <Stack>
-                  <FormControl.Label>EMAIL</FormControl.Label>
-                  <Controller
-                    control={control}
-                    name="email"
-                    rules={{
-                      required: true,
-                    }}
-                    render={({ field: { onChange, value } }) => (
-                      <Input
-                        variant="underlined"
-                        onChangeText={onChange}
-                        value={value}
-                        autoCapitalize="none"
-                        autoComplete="email"
-                      ></Input>
-                    )}
-                  />
+          <VStack width={"96%"} height={200} marginTop="-15" marginBottom={20}>
+            <Center marginBottom="10">
+              <FormControl>
+                <Stack space={5}>
+                  <Stack>
+                    <FormControl.Label>EMAIL</FormControl.Label>
+                    <Controller
+                      control={control}
+                      name="email"
+                      rules={{
+                        required: true,
+                      }}
+                      render={({ field: { onChange, value } }) => (
+                        <Input
+                          variant="underlined"
+                          onChangeText={onChange}
+                          value={value}
+                          autoCapitalize="none"
+                          autoComplete="email"
+                        ></Input>
+                      )}
+                    />
+                  </Stack>
+                  <Stack>
+                    <FormControl.Label>PASSWORD</FormControl.Label>
+                    <Controller
+                      control={control}
+                      name="password"
+                      rules={{
+                        required: true,
+                      }}
+                      render={({ field: { onChange, value } }) => (
+                        <Input
+                          variant="underlined"
+                          onChangeText={onChange}
+                          value={value}
+                          type="password"
+                        />
+                      )}
+                    />
+                  </Stack>
+                  {loginError && (
+                    <Text color={"#CE1313"}>Email ou Password Inválido</Text>
+                  )}
                 </Stack>
-                <Stack>
-                  <FormControl.Label>PASSWORD</FormControl.Label>
-                  <Controller
-                    control={control}
-                    name="password"
-                    rules={{
-                      required: true,
-                    }}
-                    render={({ field: { onChange, value } }) => (
-                      <Input
-                        variant="underlined"
-                        onChangeText={onChange}
-                        value={value}
-                        type="password"
-                      />
-                    )}
-                  />
-                </Stack>
-                {loginError && (
-                  <Text color={"#CE1313"}>Email ou Password Inválido</Text>
-                )}
-              </Stack>
-            </FormControl>
-          </Center>
+              </FormControl>
+            </Center>
           </VStack>
-      
-    
+
+
         </VStack>
 
         <VStack width={"100%"} marginLeft="4" marginTop={60}>

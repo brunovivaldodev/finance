@@ -1,0 +1,110 @@
+import { FoodProps } from "../components/Transaction";
+import { LocalProps } from "../components/nearby-places-food";
+import TiaMartaLocation from "./locations/tiamarta.png";
+export const foods: FoodProps[] = [
+  {
+    food: "Kero",
+    seller: "Dona Rosa",
+    price: 3000,
+    data:
+      "22 de setembro 2022",
+  },
+  {
+    food: "Candando",
+    seller: "Restaurante Monica",
+    price: 5000,
+    data:
+      "21 de setembro 2022",
+  },
+  {
+    food: "Kibabo",
+    seller: "Dona Rosa",
+    price: 3000,
+    data:
+      "21 de setembro 2022",
+  },
+  {
+    food: "Pizza familiar",
+    seller: "Pizza Hut",
+    price: 3000,
+    data: "21 de setembro 2022",
+  },
+  {
+    food: "Chamuca",
+    seller: "Doces da Maria",
+    price: 500,
+    data:
+      "21 de setembro 2022",
+  },
+  {
+    food: "Funge",
+    seller: "Dona Rosa",
+    price: 1500,
+    data:
+      "21 de setembro 2022",
+  },
+  {
+    food: "Funge",
+    seller: "Dona Rosa",
+    price: 1500,
+    data:
+      "21 de setembro 2022",
+  },
+  {
+    food: "Funge",
+    seller: "Dona Rosa",
+    price: 1500,
+    data:
+      "21 de setembro 2022",
+  },
+];
+
+export const locals: LocalProps[] = [
+  {
+    imageUri:
+      "https://extra.globo.com/incoming/24089621-1fb-d17/w976h550-PROP/infochpdpict000085772559.jpg",
+    seller: "Tia Marta",
+    message: "Melhores almoços e entrega",
+    description:
+      "Aqui é o melhor lugar para  comer com os amigos e encomendar sua comida. Visite o estabelecimento Tia Marta e desfrute do melhor almoço ao melhor preço.",
+    locationUri:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27635.301136901882!2d13.242202413120362!3d-9.002610460722927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a521f3f436fed49%3A0xa3f62198b55336be!2sChurrascaria%20Tempero%20Caseiro!5e0!3m2!1spt-PT!2sao!4v1674323346438!5m2!1spt-PT!2sao",
+  },
+  {
+    imageUri:
+      "https://img.freepik.com/fotos-premium/mulher-negra-chef-afro-sorrindo-alegremente-sentindo-se-feliz-e-mostrando-um-conceito-no-espaco-da-copia-com-a-palma-da-mao-conceito-de-prato-vazio_1194-339222.jpg",
+    seller: "Tia Sensação",
+    message: "Melhores almoços e entrega",
+    locationUri: TiaMartaLocation,
+    description:
+      "O bacalhau com natas é uma receita clássica da culinária portuguesa e é uma das mais adoradas formas de servir bacalhau. Cremoso e saboroso",
+  },
+  {
+    imageUri:
+      "https://img.itdg.com.br/images/recipes/000/095/378/225012/225012_original.jpg",
+    seller: "Pizza Hut",
+    message: "Melhores almoços e entrega",
+    locationUri: TiaMartaLocation,
+
+    description: "",
+  },
+  {
+    imageUri:
+      "data:image/jpeg;base64,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",
+    seller: "Doces da Maria",
+    message: "Melhores almoços e entrega",
+    locationUri: TiaMartaLocation,
+
+    description:
+      "Uma pizza grande tem 8 fatias e uma família 10. Mas as fatias de lá são finas e a massa bem fininha.",
+  },
+  {
+    imageUri:
+      "https://www.jornaldeangola.ao/fotos/frontend_1/noticias/1585911632_empregadas.jpg",
+    seller: "Dona Rosa",
+    message: "Melhores almoços e entrega",
+    locationUri: TiaMartaLocation,
+    description:
+      "Quando se aborda a gastronomia angolana, enfoca-se também o ADN da cozinha africana.",
+  },
+];

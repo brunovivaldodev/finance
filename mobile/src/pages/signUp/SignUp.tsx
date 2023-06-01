@@ -64,22 +64,22 @@ export function SingUp() {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <VStack alignItems={"flex-start"} marginBottom={"19"} width={"96%"}>
-          <HStack
-            alignItems="center"
-            space={2}
-            marginLeft={"2"}
-            marginRight={"8"}
-          >
-            <AntDesign
-              name="arrowleft"
-              size={22}
-              color="#000"
-              onPress={() => {
-                goBack();
-              }}
-            />
-          </HStack>
+      <VStack alignItems={"flex-start"} marginBottom={"19"} width={"96%"} backgroundColor="#fafafa">
+        <HStack
+          alignItems="center"
+          space={2}
+          marginLeft={"2"}
+          marginRight={"8"}
+        >
+          <AntDesign
+            name="arrowleft"
+            size={22}
+            color="#000"
+            onPress={() => {
+              goBack();
+            }}
+          />
+        </HStack>
 
         <VStack
           borderStyle={"solid"}
@@ -89,25 +89,25 @@ export function SingUp() {
           borderRadius="30"
           height={250}
         >
-        <VStack width={"96%"} height={200} marginTop="5">
-          <Center style={{height:"40%"}} >
-          <Image
-              source={require("../../../assets/cashbox.png")}
-              style={{ width: "100%", height: "100%"}}
-              resizeMode="contain"      
-          ></Image>
+          <VStack width={"96%"} height={200} marginTop="5">
+            <Center style={{ height: "40%" }} >
+              <Image
+                source={require("../../../assets/cashbox.png")}
+                style={{ width: "100%", height: "100%" }}
+                resizeMode="contain"
+              ></Image>
 
-            <Text fontSize={"18px"} bold color={"#5ADCA2"} marginTop="5" marginBottom={2} >
-              Criar Conta
-            </Text>
-            <VStack
-              borderStyle={"solid"}
-              borderWidth="1"
-              borderColor={"#5ADCA2"}
-              width={"60%"}
-            ></VStack>
-          </Center>
-           </VStack>
+              <Text fontSize={"18px"} bold color={"#5ADCA2"} marginTop="5" marginBottom={2} >
+                Criar Conta
+              </Text>
+              <VStack
+                borderStyle={"solid"}
+                borderWidth="1"
+                borderColor={"#5ADCA2"}
+                width={"60%"}
+              ></VStack>
+            </Center>
+          </VStack>
           <Center marginTop={-10}>
             <FormControl>
               <Stack space={5}>
