@@ -4,6 +4,7 @@ import { CreateTransactionController } from "../../modules/transaction/useCases/
 import { GetTransactionController } from "../../modules/transaction/useCases/getTransactions/getTransactionsController";
 import { GetCategoriesController } from "../../modules/transaction/useCases/getCategories/getCategoriesController";
 import { DeleteTransactionController } from "../../modules/transaction/useCases/deleteTransaction/deleteTransactionController";
+import { GetCategoriesCountController } from "../../modules/transaction/useCases/getCategoriesCount/getTransactionsController";
 
 const TransactionRouter = Router();
 
@@ -16,5 +17,7 @@ TransactionRouter.delete(
 
 TransactionRouter.get("/categories:user_id", GetCategoriesController.handle);
 TransactionRouter.post("/category:user_id", CreateCategoryController.handle);
+TransactionRouter.get("/categories", GetCategoriesCountController.handle);
+
 
 export { TransactionRouter };

@@ -3,6 +3,7 @@ import { CreateTransaction } from "./CreateTransaction";
 
 export class CreateTransactionController {
   static async handle(request: Request, response: Response) {
+  try {
     const { date, description, type, value, category_id } = request.body;
     const { user_id } = request.params;
 
@@ -18,5 +19,8 @@ export class CreateTransactionController {
     });
 
     return response.json(transaction);
+  } catch (error) {
+    console.log(error)
+  }
   }
 }

@@ -43,4 +43,5 @@ export class CategoriesRepository extends Repository<Categories> {
 
     return categories;
   }
+
 }

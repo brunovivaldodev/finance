@@ -68,5 +68,18 @@ export class TransactionRepository extends Repository<Transaction> {
     });
 
     return transactions;
+    
   }
+
+  public async getCategories() {
+
+
+    const transaction = await this.transactionRepository
+    .createQueryBuilder()
+    .relation(Categories, "categories")
+    .add(5)
+  
+
+  return transaction
+}
 }
